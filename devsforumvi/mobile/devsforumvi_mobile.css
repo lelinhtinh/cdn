@@ -98,3 +98,4 @@ a.navElement span.navBtnLabel{display:inline-block;color:#FFF;font-weight:700;wh
 .message_text a{text-decoration:underline;font-weight:700;color:#275271}
 .block,.spoiler .spoiler_content.hidden{display:block}
 .small,.hiddenMsgTitle{font-size:.9em}
+.img_photo{max-width:100%}
