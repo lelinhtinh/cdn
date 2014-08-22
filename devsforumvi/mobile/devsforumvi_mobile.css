@@ -43,7 +43,7 @@ html,body{height:100%}
 .clear{clear:both;width:1px;font-size:1px;line-height:1px}
 blockquote{display:block;position:relative;max-width:96%;border:1px solid #DDD;margin:1em auto;padding:.5em}
 blockquote .quote_content{display:block;padding:0 1em 1em}
-blockquote cite{background:none #666;float:left;margin-bottom:.5em;color:#FFF;padding:.5em 1em}
+blockquote cite{background:none;float:left;font-weight:bold;margin-bottom:5px}
 blockquote .open_quote{display:block;font-weight:700;font-size:2em;height:.5em;width:.5em}
 blockquote .close_quote{display:block;height:0;font-weight:700;font-size:2em;padding-bottom:.5em;position:absolute;right:.2em;bottom:0}
 .spoiler .spoiler_content{display:none}
