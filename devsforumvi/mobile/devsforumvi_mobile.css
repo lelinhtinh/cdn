@@ -1,0 +1,100 @@
+/* devs forumvi - skin mobile */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,hr{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;margin:0;padding:0}
+body{line-height:1;font-size:16px;font-family:Helvetica, sans-serif}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+:focus{outline:0}
+ins{text-decoration:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+html,body{height:100%}
+#page-body{position:relative;min-height:100%;background:none #F6F6F6}
+.mobile_title{height:2em;font-size:.9em;position:relative;line-height:12px;background:none #333;padding:2px 0}
+.mobile_title.application_header{position:fixed;width:100%;z-index:100;background:none #0092D5;top:0;left:0}
+.application_header_spacer{height:33px}
+.mobile_title_content{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;text-shadow:0 -1px 0 rgba(0,0,0,0.4);font-weight:700;float:none;width:auto;position:absolute;left:65px;right:65px;text-align:center;line-height:34px;color:#fff;top:0}
+.mobile_set{height:1em;color:#fff;font-size:.9em;background:none #666;padding:.5em}
+.mobile_set_content{float:left;width:80%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-weight:700;line-height:1.2em}
+.mobile_item{border-bottom:1px solid #E4E4E4;font-size:.8em;background:none #FFF;margin:0;padding:.5em 0}
+.mobile_item:hover{background:none #F2F2F2}
+.mobile_item_link_content{background:url(http://i83.servimg.com/u/f83/16/58/89/73/bnext10.png) no-repeat scroll 100% 50%;padding:0 1em 0 45px}
+.forum_no_new{background:url(http://i78.servimg.com/u/f78/17/70/81/78/files10.png) no-repeat scroll 10px center transparent}
+.forum_new{background:url(http://i78.servimg.com/u/f78/17/70/81/78/file10.png) no-repeat scroll 10px center transparent}
+.forum_locked{background:url(http://i78.servimg.com/u/f78/17/70/81/78/lock10.png) no-repeat scroll 10px center transparent}
+.folder_birthday{background:url(http://i78.servimg.com/u/f78/17/70/81/78/my_top10.png) no-repeat scroll 10px 50%}
+.folder_no_new{background:url(http://i83.servimg.com/u/f83/16/58/89/73/13653310.png) no-repeat scroll 10px 50%}
+.folder_new{background:url(http://i78.servimg.com/u/f78/17/70/81/78/topicn10.png) no-repeat scroll 10px 50%}
+.folder_global{background:url(http://i83.servimg.com/u/f83/16/58/89/73/megafo11.png) no-repeat scroll 10px 50%}
+.folder_global_new{background:url(http://i83.servimg.com/u/f83/16/58/89/73/megafo12.png) no-repeat scroll 10px 50%}
+.folder_announce{background:url(http://i83.servimg.com/u/f83/16/58/89/73/13653313.png) no-repeat scroll 10px 50%}
+.folder_announce_new{background:url(http://i83.servimg.com/u/f83/16/58/89/73/infon10.png) no-repeat scroll 10px 50%}
+.folder_sticky{background:url(http://i83.servimg.com/u/f83/16/58/89/73/pin11.png) no-repeat scroll 10px 50%}
+.folder_sticky_new{background:url(http://i83.servimg.com/u/f83/16/58/89/73/pinn10.png) no-repeat scroll 10px 50%}
+.folder_locked{background:url(http://i83.servimg.com/u/f83/16/58/89/73/13653312.png) no-repeat scroll 10px 50%}
+.folder_locked_new{background:url(http://i83.servimg.com/u/f83/16/58/89/73/closed10.png) no-repeat scroll 10px 50%}
+.folder_hot{background:url(http://i83.servimg.com/u/f83/16/58/89/73/very_p10.png) no-repeat scroll 10px 50%}
+.folder_hot_new{background:url(http://i83.servimg.com/u/f83/16/58/89/73/very_p12.png) no-repeat scroll 10px 50%}
+.mobile_subtitle{color:#000;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-weight:700;line-height:1.3em}
+.mobile_comment{font-size:.8em;color:#666;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:1.3em}
+.mobile_prev_button,.mobile_next_button{display:inline-block;position:absolute;height:26px;width:26px;background:url(http://i78.servimg.com/u/f78/17/70/81/78/back10.png) no-repeat scroll center;background-size:100%;text-indent:-9999px;margin:2px}
+.mobile_next_button.block{background-image:url(http://i78.servimg.com/u/f78/17/70/81/78/next10.png)}
+.mobile_prev_button{left:12px}
+.mobile_next_button{right:12px}
+.clear{clear:both;width:1px;font-size:1px;line-height:1px}
+blockquote{display:block;position:relative;max-width:96%;border:1px solid #DDD;margin:1em auto;padding:.5em}
+blockquote .quote_content{display:block;padding:0 1em 1em}
+blockquote cite{background:none #666;float:left;margin-bottom:.5em;color:#FFF;padding:.5em 1em}
+blockquote .open_quote{display:block;font-weight:700;font-size:2em;height:.5em;width:.5em}
+blockquote .close_quote{display:block;height:0;font-weight:700;font-size:2em;padding-bottom:.5em;position:absolute;right:.2em;bottom:0}
+.spoiler .spoiler_content{display:none}
+.spoiler{display:block;position:relative;border:1px solid #DDD;margin:1em auto}
+.spoiler_content{display:inline-block;line-height:1.3em;overflow:auto;margin:.5em}
+.spoiler_title{cursor:pointer;background:none #666;color:#FFF;padding:.5em}
+.spoiler_title:hover{background:#F2F2F2;color:#000}
+.codebox{border:1px solid #DDD;padding:.5em}
+.codebox p{background:#666;color:#FFF;margin-bottom:.5em;padding:.5em 1em}
+.codebox code{display:block;color:green;background-color:#FFF;overflow:auto}
+.post{line-height:1.3em;font-size:.8em;background:none #FFF;margin:0;padding:0 0 1em}
+.postbody .post_header{color:#fff;font-size:.9em;background:none #666;margin:0;padding:.5em}
+.postbody .post_header a{color:#fff;vertical-align:text-top}
+.postbody .post_header hr{height:1px;margin:.5em 1em}
+.postbody .content{position:relative;-ms-word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;padding:1em}
+.img_link{display:inline-block;white-space:nowrap;height:1.2em;font-weight:400;padding:0 .5em}
+.img_link:before{content:'[ ';font-size:1.2em;line-height:1.2em}
+.img_link:after{content:' ]';font-size:1.2em;line-height:1.2em}
+.application_footer_spacer{height:3em}
+#page-footer{color:#fff;margin-top:-3em;position:relative;text-align:center;height:2em;background:none #000;padding:.5em}
+#page-footer a{color:#fff;display:block;line-height:1.3em}
+.poll{padding:.5em}
+.poll .fieldset{border:1px solid #000;padding:.5em}
+.poll .legend{padding:0 0 .5em}
+.poll dl{display:table;padding:0 0 1em}
+.poll dt,.poll dd{display:table-cell;padding:0 1em}
+.poll .table-row{display:table-row}
+.poll .bold{font-weight:700}
+.attachbox{display:inline-block;border:1px solid #000;margin-top:2em;border-radius:1em}
+.attachbox .title{background-color:#fff;display:inline-block;-webkit-border-bottom-right-radius:1em;-webkit-border-top-left-radius:1em;-moz-border-radius:1em;border-bottom-right-radius:1em;border-top-left-radius:1em;padding:.2em .5em}
+dl.attachments{padding:0 .5em .5em}
+dl.attachments dt{padding-top:.5em}
+.hiddenMsgBody{display:none;padding-top:2em}
+div#mToggleContainer{float:right;height:33px;width:30px;background:#111;margin:-2px 0 0;padding:0}
+a#mToggleArrow{display:block;width:30px;height:33px;text-decoration:none;border:none;margin:0;padding:0}
+a#mToggleArrow.hiddenBar{background-image:url(http://illiweb.com/fa/i/mobileNavbar/sprite.png);background-position:-160px 0}
+a#mToggleArrow.shownBar{background-image:url(http://illiweb.com/fa/i/mobileNavbar/sprite.png);background-position:-192px 0}
+ul#mNavbar{display:none;background-color:#111;height:50px;position:absolute;left:0;width:100%;text-align:center;padding:10px 0}
+ul#mNavbar li{display:inline-block;height:100%;min-width:50px;text-align:center;padding:0 10px}
+a.navElement{text-decoration:none;border:none;display:block}
+a.navElement span.navBtnIcon{display:inline-block;width:32px;height:32px;background:transparent url(http://illiweb.com/fa/i/mobileNavbar/sprite.png) no-repeat -224px 0}
+a.navElement span.navBtnLabel{display:inline-block;color:#FFF;font-weight:700;white-space:nowrap}
+#mobileActionBar{text-align:center;height:30px;line-height:30px;background-color:#111;width:100%;position:fixed;bottom:0;margin:0;padding:0}
+#mobileActionBar a.navbar{text-decoration:none;display:inline-block;height:30px;line-height:30px;color:#FFF;white-space:nowrap;margin:0;padding:0}
+#mobileActionBar .mobileActionLabel{background:transparent url(http://illiweb.com/fa/i/mobileNavbar/ico_page001.png) no-repeat scroll left center;display:inline-block;line-height:30px;padding-left:25px;font-size:.9em}
+.inputTxtContainer{margin:20px 0}
+.inputTxtContainer .inputTxt,textarea[name=message]{background-color:#FFF!important;line-height:1.4;font-size:16px;display:block;color:#606060;width:100%;border:1px solid #DDD!important;padding:3px 0}
+.defaultBtn{display:inline-block;background:#0092d5;color:#fff;border:1px solid #0092d5;height:30px;width:100%;padding:0 8px}
+.message_die{width:90%;padding-top:20px;font-size:.8em;margin:0 auto}
+.message_title{font-weight:700;text-align:center}
+.message_text{line-height:1.3em;text-align:justify;padding:16px 0}
+.message_text a{text-decoration:underline;font-weight:700;color:#275271}
+.block,.spoiler .spoiler_content.hidden{display:block}
+.small,.hiddenMsgTitle{font-size:.9em}
