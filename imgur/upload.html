@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>zzImgUr v2 by zzbaivong | devs.forumvi.com</title>
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="less-1.7.5.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- zzImgUr v2 by zzbaivong <devs.forumvi.com> -->
+    <div id="zzImgUr2">
+        <div id="img_preview" class="container clearfix">
+            <div class="img_control">
+                <div id="img_choose_wrap" class="img_button">
+                    <input id="img_choose" type="file" multiple accept="image/png, image/jpeg, image/gif, image/bmp" />
+                    <span>Chọn ảnh</span>
+                </div>
+                <button id="img_upload" class="img_button" disabled>Tải lên</button>
+            </div>
+            <ul id="img_list">
+            </ul>
+        </div>
+        <form id="img_data" action="javascript:alert($('#img_mess').val())" method="post" name="post" class="container">
+            <div>
+                <input id="img_title" name="subject" value="" maxlength="255" placeholder="Nhập tiêu đề cho bài đăng" onkeypress="if (event.keyCode==13){return false}" type="text" required />
+                <select name="f" id="img_type">
+                    <option value="2">Funny</option>
+                    <option value="4">Abstract</option>
+                    <option value="7">Animals</option>
+                    <option value="9">Travel</option>
+                    <option value="21">Macro</option>
+                </select>
+            </div>
+            <div>
+                <textarea id="img_mess" name="message" wrap="virtual" required></textarea>
+            </div>
+            <input id="img_desc" type="hidden" value="" name="description" />
+            <div class="img_control">
+                <input id="img_submit" class="img_button" name="post" value="Đăng bài" type="submit" />
+                <input id="img_reset" class="img_button" value="Làm lại" type="reset" />
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="min/jquery-ui.min.js"></script>
+    <script src="min/watermark.min.js"></script>
+    <script src="min/script.min.js"></script>
+</body>
+
+</html>
