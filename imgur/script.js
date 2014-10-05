@@ -147,7 +147,3 @@ $('#img_list').on('click', '.img_close', function() {
     $(this).parent().remove();
     checkUpload();
 });
-
-$('#img_type').change(function(){
-    $('#img_forum').val(this.value);
-});

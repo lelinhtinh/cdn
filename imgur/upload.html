@@ -25,14 +25,14 @@
         <form id="img_data" action="javascript:alert($('#img_mess').val())" method="post" name="post" class="container">
             <div>
                 <input id="img_title" name="subject" value="" maxlength="255" placeholder="Nhập tiêu đề cho bài đăng" onkeypress="if (event.keyCode==13){return false}" type="text" required />
-                <select id="img_type">
+                <select name="f" id="img_type">
                     <option value="2">Funny</option>
                     <option value="4">Abstract</option>
                     <option value="7">Animals</option>
                     <option value="9">Travel</option>
                     <option value="21">Macro</option>
                 </select>
-                <input id="img_forum" type="hidden" value="2" name="f" />
+                <input type="hidden" name="mode" value="newtopic" />
             </div>
             <div>
                 <textarea id="img_mess" name="message" wrap="virtual" required></textarea>
