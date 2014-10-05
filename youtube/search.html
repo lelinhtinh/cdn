@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="//baivong.github.io/boxes/stylesheets/jquery.boxes.min.css" type="text/css" />
+</head>
+
+<body>
+    <!-- zzYoutube by zzbaivong <devs.forumvi.com> -->
+    <div id="ytb_overlay"></div>
+    <div id="zzYoutube">
+        <div id="ytb_control">
+            <input id="ytb_query" placeholder="Nhập URL video Youtube hoặc từ khóa và nhấn ENTER" onkeypress="if (event.keyCode==13){search();return false}" value="Đang tải, vui lòng chờ..." type="text" disabled />
+            <button id="ytb_search" class="submit_button" onclick="search()" disabled>OK</button>
+        </div>
+        <div id="ytb_form">
+            <div id="ytb_preview">
+            </div>
+            <div id="ytb_data">
+                <input id="ytb_title" name="subject" value="" maxlength="255" placeholder="Nhập tiêu đề cho bài đăng" onkeypress="if (event.keyCode==13){return false}" type="text" required />
+                <select name="f" id="ytb_type">
+                    <option value="2">Funny</option>
+                    <option value="4">Anime</option>
+                    <option value="7">Music</option>
+                    <option value="9">Movie</option>
+                </select>
+                <textarea id="ytb_mess" name="message" wrap="virtual">{MESSAGE}</textarea>
+                <input id="ytb_desc" type="hidden" value="" name="description" />
+                <input id="ytb_submit" name="post" value="Đăng bài" type="submit" />
+            </div>
+            <div id="ytb_result">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="//baivong.github.io/boxes/javascripts/jquery.boxes.min.js"></script>
+    <script type="text/javascript" src="//baivong.github.io/boxes/javascripts/jquery.boxes.repopup.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=loadAPIClientInterfaces"></script>
+</body>
+
+</html>
