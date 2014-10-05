@@ -84,7 +84,7 @@
 
 			initCanvas();
 			initWatermark();
-		}
+		},
 		setCanvasSize = function(w, h){
 			gcanvas.width = w;
 			gcanvas.height = h;
@@ -92,6 +92,7 @@
 		applyWatermark = function(img){
 			gcanvas.width = img.dataset.width || img.offsetWidth;
 			gcanvas.height = img.dataset.height || img.offsetHeight;
+			if(gcanvas.width >= 220 && gcanvas.height >= 180) {
 			gctx.drawImage(img, 0, 0);
 			var position = watermarkPosition,
 			x = 0,
@@ -111,6 +112,9 @@
 			img.onload = null;
 
 			img.src = gcanvas.toDataURL();
+
+			}
+
 			$(img).removeClass('watermark');
 		},
 		applyWatermarks = function(){

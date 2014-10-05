@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>zzImgUr v2 by zzbaivong | devs.forumvi.com</title>
     <link rel="stylesheet/less" type="text/css" href="style.less" />
-    <script src="less-1.7.5.min.js" type="text/javascript"></script>
+    <script src="min/less-1.7.5.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -25,13 +25,14 @@
         <form id="img_data" action="javascript:alert($('#img_mess').val())" method="post" name="post" class="container">
             <div>
                 <input id="img_title" name="subject" value="" maxlength="255" placeholder="Nhập tiêu đề cho bài đăng" onkeypress="if (event.keyCode==13){return false}" type="text" required />
-                <select name="f" id="img_type">
+                <select id="img_type">
                     <option value="2">Funny</option>
                     <option value="4">Abstract</option>
                     <option value="7">Animals</option>
                     <option value="9">Travel</option>
                     <option value="21">Macro</option>
                 </select>
+                <input id="img_forum" type="hidden" value="2" name="f" />
             </div>
             <div>
                 <textarea id="img_mess" name="message" wrap="virtual" required></textarea>
@@ -43,7 +44,7 @@
             </div>
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="min/jquery-2.1.1.min.js"></script>
     <script src="min/jquery-ui.min.js"></script>
     <script src="min/watermark.min.js"></script>
     <script src="min/script.min.js"></script>
