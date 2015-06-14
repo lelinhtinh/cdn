@@ -13,7 +13,7 @@ dl.codebox:hover .controlCode{opacity:1}
 .controlCode img.textCode{background-image:url(http://i.imgur.com/gXbPqhr.png)}
 .controlCode img.textCode.pretty{background-image:url(http://i.imgur.com/FJOia1z.png)}
 .controlCode :hover{cursor:pointer;border-color:#FFF}
-pre{counter-reset:linenumber;overflow:auto;margin:0;padding:1em}
+pre{counter-reset:linenumber;overflow:auto;margin:0;padding:1em;word-wrap:normal}
 dl.codebox code{color:inherit;display:block;height:100%;max-height:100%;overflow:visible;white-space:pre;margin:0 0 0 3em;padding:0}
 .lineNumber{pointer-events:none;width:3em;letter-spacing:-1px;border-right:1px solid rgba(125,125,125,0.37);float:left;margin-left:-1em}
 dl.codebox code,.lineNumber{font-size:1em !important;line-height:1.3em!important}
