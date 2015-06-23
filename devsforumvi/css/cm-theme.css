@@ -1,4 +1,4 @@
-/* zzCodeMirror for Forumotion */
+/* zzCodeMirror v2.1 for Forumorion by Zzbaivong (devs.forumvi.com) */
 dl.codebox,dl.codebox *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 dl.codebox{background:transparent;border:0 none;overflow:hidden}
 dl.codebox dd{background:transparent;margin:0;padding:0}
@@ -10,12 +10,12 @@ dl.codebox:hover .controlCode{opacity:1}
 .controlCode *{width:20px;height:20px!important;display:block;float:right;border:1px solid #999;background:url(http://i.imgur.com/ccn5y7c.png) no-repeat center #FFF;margin:4px 4px 0 0 !important}
 .controlCode input.findLine{background:url(http://i.imgur.com/8fxbcQy.png) no-repeat center #FFF!important;padding:0!important}
 .controlCode input.findLine:focus{background:#FFF!important;width:40px;text-align:center;color:#333;font-size:11px}
-.controlCode img.textCode{background-image:url(http://i.imgur.com/gXbPqhr.png)}
-.controlCode img.textCode.pretty{background-image:url(http://i.imgur.com/FJOia1z.png)}
+.controlCode img.textCode{background-image:url(http://i.imgur.com/FJOia1z.png)}
+.controlCode img.textCode.pretty{background-image:url(http://i.imgur.com/gXbPqhr.png)}
 .controlCode :hover{cursor:pointer;border-color:#FFF}
-dl.codebox dd.CodemirrorHighlighter{counter-reset:linenumber;overflow:auto!important;margin:0!important;padding:1em!important;word-wrap:normal!important}
-dl.codebox code{color:inherit;display:block;height:100%;max-height:100%;overflow:visible;white-space:pre;margin:0 0 0 3em;padding:0}
-.lineNumber{pointer-events:none;width:3em;letter-spacing:-1px;border-right:1px solid rgba(125,125,125,0.37);float:left;margin-left:-1em}
+dl.codebox dd.CodemirrorHighlighter{counter-reset:linenumber;overflow:visible!important;margin:0!important;padding:1em!important;word-wrap:normal!important}
+dl.codebox code{color:inherit;display:block;height:100%;max-height:100%;overflow:auto;white-space:pre;margin:0 0 0 0;padding:0}
+.lineNumber{pointer-events:none;width:3em;letter-spacing:-1px;border-right:1px solid rgba(125,125,125,0.37);float:left;margin-left:-4em}
 dl.codebox code,.lineNumber{font-size:1em !important;line-height:1.3em!important}
 .lineNumber > span{pointer-events:none;display:block;counter-increment:linenumber}
 .lineNumber > span:before{content:counter(linenumber);font-family:monospace;color:#999;display:block;padding-right:.8em;text-align:right}
