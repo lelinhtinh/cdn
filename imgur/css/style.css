@@ -1,0 +1,338 @@
+/*! ZzYoutube by Zzbaivong - devs.forumvi.com */
+/* line 3, style.less */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* line 8, style.less */
+body {
+  background: url(../img/bg.jpg) repeat top center #111111;
+  background-size: cover;
+}
+/* line 13, style.less */
+#zzImgUr2,
+#zzImgUr2 * {
+  box-sizing: border-box;
+}
+/* line 19, style.less */
+#zzImgUr2 {
+  width: 600px;
+  margin: 10px auto;
+}
+/* line 24, style.less */
+.img_control {
+  text-align: right;
+}
+/* line 28, style.less */
+#img_choose_wrap,
+#img_submit {
+  float: left;
+}
+/* line 33, style.less */
+.img_button {
+  background: url(../img/plus.png) no-repeat 10px center #bc0fd8;
+  height: 40px;
+  width: 135px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: 0 none;
+  color: #FFF;
+  padding-left: 45px;
+  text-align: left;
+  font: 18px/40px arial;
+}
+/* line 45, style.less */
+.img_button:hover {
+  background-color: #444!important;
+}
+/* line 48, style.less */
+.img_button#img_upload {
+  background-image: url(../img/upload.png);
+  background-color: #007ED8;
+}
+/* line 52, style.less */
+.img_button#img_submit {
+  background-image: url(../img/send.png);
+  background-color: #089061;
+}
+/* line 56, style.less */
+.img_button#img_reset {
+  background-image: url(../img/reset.png);
+  background-color: #c0392b;
+}
+/* line 62, style.less */
+#img_choose {
+  z-index: 10;
+  opacity: 0;
+  font-size: 300px;
+  height: 1000px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 73, style.less */
+.container {
+  background: #FFF;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #444;
+}
+/* line 80, style.less */
+#img_list {
+  margin: 0 -10px;
+}
+/* line 82, style.less */
+#img_list li {
+  background: url(data:image/gif;base64,R0lGODlhCgAKAIAAAAAAAP///yH5BAEAAAAALAAAAAAKAAoAAAIRhB2ZhxoM3GMSykqd1VltzxQAOw==) repeat scroll #dddddd;
+  padding: 10px;
+  border: 2px solid #CCC;
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 283px;
+  height: 200px;
+  margin: 10px 0 10px 10px;
+  overflow: hidden;
+}
+/* line 93, style.less */
+#img_list li:hover {
+  background: #FFF;
+  border-color: #075BF8;
+}
+/* line 96, style.less */
+#img_list li:hover .img_close {
+  opacity: 1;
+}
+/* line 99, style.less */
+#img_list li:hover .img_details {
+  bottom: 5px;
+}
+/* line 103, style.less */
+#img_list li img {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 114, style.less */
+#img_list li.loading {
+  border-color: #FFF200;
+}
+/* line 117, style.less */
+#img_list li.error {
+  border-color: #FF3535;
+  opacity: .7;
+}
+/* line 121, style.less */
+#img_list li.success {
+  border-color: #00C131;
+}
+/* line 124, style.less */
+#img_list li.ui-state-highlight {
+  height: 200px;
+  background: yellow;
+  border: 2px dashed red;
+}
+/* line 132, style.less */
+.img_details {
+  height: 50px;
+  line-height: 20px;
+  padding: 5px 10px;
+  font-size: 13px;
+  background: #444;
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  -webkit-transition: bottom .3s;
+          transition: bottom .3s;
+}
+/* line 144, style.less */
+.img_details input {
+  border: 1px solid #DDD;
+  width: 100%;
+}
+/* line 148, style.less */
+.img_details a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 152, style.less */
+.img_details a:last-child {
+  color: red;
+  float: right;
+}
+/* line 156, style.less */
+.img_details a:hover {
+  color: #FFF;
+}
+/* line 162, style.less */
+.img_progress_bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  padding: 1px;
+  background: #f9f9f9;
+  z-index: 50;
+}
+/* line 171, style.less */
+.img_progress_bar .img_progress {
+  height: 3px;
+  width: 0;
+  background: #FF4848;
+  -webkit-transition: width .3s;
+          transition: width .3s;
+}
+/* line 179, style.less */
+.img_close:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+/* line 184, style.less */
+.img_close {
+  text-indent: -9999px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background: url(../img/close.png) no-repeat center center #ffffff;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+/* line 195, style.less */
+.img_close:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+/* line 202, style.less */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* line 216, style.less */
+#img_data {
+  display: none;
+}
+/* line 220, style.less */
+#img_mess {
+  width: 100%;
+  resize: vertical;
+  min-height: 100px;
+  margin: 10px 0;
+  border: 1px solid #DDD;
+}
+/* line 228, style.less */
+#img_title {
+  padding: 6px 10px;
+  width: 420px;
+  border: 1px solid #DDD;
+}
+/* line 234, style.less */
+#img_type {
+  padding: 5px;
+  width: 145px;
+  float: right;
+  border: 1px solid #DDD;
+}
+/*! jQuery UI sortable */
+/* line 242, style.less */
+.ui-helper-hidden {
+  display: none;
+}
+/* line 246, style.less */
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 257, style.less */
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+/* line 268, style.less */
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+/* line 275, style.less */
+.ui-helper-clearfix:after {
+  clear: both;
+}
+/* line 279, style.less */
+.ui-helper-clearfix {
+  min-height: 0;
+}
+/* line 283, style.less */
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 293, style.less */
+.ui-front {
+  z-index: 100;
+}
+/* line 297, style.less */
+.ui-state-disabled {
+  cursor: default !important;
+}
+/* line 301, style.less */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+/* line 308, style.less */
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 316, style.less */
+.ui-sortable-handle {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+/* line 321, style.less */
+.ui-sortable-helper {
+  cursor: move;
+}

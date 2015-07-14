@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>zzImgUr v2 by zzbaivong | devs.forumvi.com</title>
-    <link rel="stylesheet/less" type="text/css" href="style.less" />
-    <script src="min/less-1.7.5.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
@@ -22,15 +21,17 @@
             <ul id="img_list">
             </ul>
         </div>
-        <form id="img_data" action="javascript:alert($('#img_mess').val())" method="post" name="post" class="container">
+        <form id="img_data" action="/post" method="post" name="post" class="container">
             <div>
                 <input id="img_title" name="subject" value="" maxlength="255" placeholder="Nhập tiêu đề cho bài đăng" onkeypress="if (event.keyCode==13){return false}" type="text" required />
                 <select name="f" id="img_type">
-                    <option value="2">Funny</option>
-                    <option value="4">Abstract</option>
-                    <option value="7">Animals</option>
-                    <option value="9">Travel</option>
-                    <option value="21">Macro</option>
+                    <option value="115">Ảnh Vui</option>
+                    <option value="73">Hình Nền Máy Tính</option>
+                    <option value="98">Cosplay</option>
+                    <option value="57">Girl xinh - Kute - Sao</option>
+                    <option value="55">Ảnh Girl Bikini - Sexy</option>
+                    <option value="100">Ảnh Bìa Facebook</option>
+                    <option value="74">Ảnh Đẹp Khác</option>
                 </select>
                 <input type="hidden" name="mode" value="newtopic" />
             </div>
@@ -44,10 +45,10 @@
             </div>
         </form>
     </div>
-    <script src="min/jquery-2.1.1.min.js"></script>
-    <script src="min/jquery-ui.min.js"></script>
-    <script src="min/watermark.min.js"></script>
-    <script src="min/script.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.watermark.min.js"></script>
+    <script src="script.min.js"></script>
 </body>
 
 </html>
