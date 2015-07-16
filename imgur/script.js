@@ -67,7 +67,11 @@
         $htmlbody = $('html,body'),
         $img_mess = $('#img_mess'),
         $img_desc = $('#img_desc');
-
+        
+    var postto = location.search;
+    if(postto !== '' && postto.indexOf('?postto=') === 0) {
+        $('#img_type').val(postto.slice(8));
+    }
     $img_choose_wrap.on('change', '#img_choose', function () {
         $img_upload.prop('disabled', true);
         $.each(this.files, function (index, file) {
